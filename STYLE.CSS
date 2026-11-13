@@ -1,48 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Clothing Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header {
-    padding: 20px;
-    text-align: center;
-}
+    <header>
+        <h1>My Clothing Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-}
+    <section class="hero">
+        <h2>New Collection Is Here</h2>
+        <p>Stylish clothes for every day.</p>
+        <a href="products.html" class="button">Shop Now</a>
+    </section>
 
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-}
+    <section class="featured">
+        <h2>Featured Items</h2>
+        <div class="items">
+            <div class="item">
+                <h3>T-Shirt</h3>
+                <p>$25</p>
+            </div>
+            <div class="item">
+                <h3>Jeans</h3>
+                <p>$50</p>
+            </div>
+            <div class="item">
+                <h3>Jacket</h3>
+                <p>$80</p>
+            </div>
+        </div>
+    </section>
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid black;
-    text-decoration: none;
-}
+    <footer>
+        <p>Contact us: yourname@email.com</p>
+    </footer>
 
-.featured {
-    padding: 20px;
-    text-align: center;
-}
-
-.items {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.item {
-    border: 1px solid #cccccc;
-    padding: 20px;
-    width: 180px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-}
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,28 +1,73 @@
+@charset "UTF-8";
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     margin: 0;
+    background-color: #fffaf5;
+    color: #3d4f3a;
+}
+
+/* little leaves around every heading */
+h2::before {
+    content: "🌿 ";
+}
+
+h2::after {
+    content: " 🌿";
 }
 
 header {
+    background-color: #fbe3e8;
     padding: 20px;
     text-align: center;
+    border-bottom: 4px solid #cfe5c6;
+}
+
+header h1 {
+    color: #b8456b;
+    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
+header h1::before {
+    content: "🌸 ";
+}
+
+
+header h1::after {
+    content: " 🌸";
 }
 
 nav a {
+    color: #4f7a4a;
     margin: 0 10px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b8456b;
 }
 
 .hero {
+    background: linear-gradient(#fbe3e8, #e3f0dc);
+    color: #3d4f3a;
     text-align: center;
     padding: 60px 20px;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid black;
+    padding: 10px 24px;
+    background-color: #b8456b;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+
+.button:hover {
+    background-color: #9c3558;
 }
 
 .featured {
@@ -37,14 +82,29 @@ nav a {
 }
 
 .item {
-    border: 1px solid #cccccc;
+    background-color: white;
+    border: 2px solid #f4cdd8;
+    border-radius: 15px;
     padding: 20px;
     width: 180px;
+    box-shadow: 0 3px 8px rgba(184, 69, 107, 0.15);
 }
 
 footer {
+    background-color: #4f7a4a;
+    color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
+}
+
+
+footer p::before {
+    content: "🌷 ";
+}
+
+footer p::after {
+    content: " 🌷";
 }
 
 .products {
@@ -57,8 +117,31 @@ footer {
 }
 
 .add-button {
-    padding: 8px 16px;
+    padding: 8px 18px;
+    background-color: #6a9a5b;
+    color: white;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #4f7a4a;
+}
+
+.cart {
+
+    padding: 20px;
+    text-align: center;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    margin: 10px 0;
 }
 
 #pay-form {
@@ -70,9 +153,17 @@ footer {
     margin: 10px auto;
     padding: 8px;
     width: 250px;
+    border: 1px solid #f4cdd8;
+    border-radius: 8px;
 }
 
 #pay-form button {
-    padding: 10px 20px;
+    padding: 10px 24px;
+    background-color: #b8456b;
+    color: white;
+    font-weight: bold;
+    border: none;
+
+    border-radius: 25px;
     cursor: pointer;
 }

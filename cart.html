@@ -22,6 +22,19 @@
 
         <h3 id="cart-total">Total: R0</h3>
 
+        <form id="pay-form" action="https://sandbox.payfast.co.za/eng/process" method="post">
+    <input type="hidden" name="merchant_id" value="10000100">
+    <input type="hidden" name="merchant_key" value="46f0cd694581a">
+    <input type="hidden" name="amount" id="pay-amount" value="0.00">
+    <input type="hidden" name="item_name" value="NDUGE LABEL order">
+
+    <input type="text" name="name_first" placeholder="Your name" required>
+    <input type="email" name="email_address" placeholder="Your email" required>
+    <input type="text" name="custom_str1" placeholder="Delivery address" required>
+
+    <button type="submit">Pay Now</button>
+</form>
+
         <a href="products.html" class="button">Continue Shopping</a>
     </section>
 

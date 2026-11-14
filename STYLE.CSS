@@ -60,3 +60,19 @@ footer {
     padding: 8px 16px;
     cursor: pointer;
 }
+
+#pay-form {
+    margin: 20px 0;
+}
+
+#pay-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 250px;
+}
+
+#pay-form button {
+    padding: 10px 20px;
+    cursor: pointer;
+}

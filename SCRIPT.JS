@@ -45,6 +45,7 @@ function showCart() {
     }
 
     cartTotal.innerText = "Total: R" + total;
+        document.getElementById("pay-amount").value = total.toFixed(2);
 }
 
 // remove one item from the cart
@@ -55,3 +56,14 @@ function removeItem(index) {
 }
 
 showCart();
+// stop the payment if the cart is empty
+var payForm = document.getElementById("pay-form");
+
+if (payForm != null) {
+    payForm.addEventListener("submit", function (event) {
+        if (cart.length == 0) {
+            alert("Your cart is empty");
+            event.preventDefault();
+        }
+    });
+}
